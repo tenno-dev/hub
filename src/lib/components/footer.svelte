@@ -17,7 +17,7 @@
 			</span>
 			<span>
 				<a
-					href="https://github.com/Bitti09/mediathekcommunity"
+					href="https://github.com/tenno-dev/hub"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="github-link"
@@ -38,8 +38,8 @@
 				</a>
 			</span>
 		</nav>
-    </div>
- </footer>
+	</div>
+</footer>
 
 <style>
 	.footer {
@@ -67,26 +67,6 @@
 		flex-direction: column;
 		gap: 0.5rem;
 		align-items: center;
-	}
-
-	.tmdb-credit {
-		font-size: clamp(0.8rem, 1.5vw, 0.9rem);
-		color: var(--font-color-light);
-	}
-
-	.tmdb-logo {
-		margin-top: 0.5rem;
-		transform: translateZ(0);
-		will-change: transform;
-	}
-
-	.tmdb-logo svg {
-		height: clamp(12px, 2vw, 13.52px);
-		width: auto;
-	}
-
-	.logo-path {
-		fill: url(#tmdb-logo-gradient);
 	}
 
 	.github-link {
