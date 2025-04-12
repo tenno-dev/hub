@@ -2,35 +2,37 @@
 	export let constructionProgress: any;
 </script>
 
-<div class="card bg-base-100 card-xs w-auto shadow-sm">
-	<div class="card-body text-center">
-		<h2
-			class="card-title items-center bg-transparent"
-			style="text-align: center !important; background: transparent;"
-		>
-			<p>Construction Progress</p>
-		</h2>
-		<div class="grid-container">
-			<div>
-				<p>Fomorian</p>
-				<div
-					class="radial-progress text-primary"
-					style="--value:{constructionProgress?.fomorianProgress};"
-					aria-valuenow={constructionProgress?.fomorianProgress}
-					role="progressbar"
-				>
-					{constructionProgress?.fomorianProgress}%
+<div>
+	<h2
+		class="card-title justify-center bg-transparent"
+		style="text-align: center !important; background: transparent;"
+	>
+		<p>Construction Progress</p>
+	</h2>
+	<div class="card bg-base-100 card-xs w-auto shadow-sm">
+		<div class="card-body text-center">
+			<div class="grid-container">
+				<div>
+					<p>Fomorian</p>
+					<div
+						class="radial-progress text-primary"
+						style="--value:{constructionProgress?.fomorianProgress};"
+						aria-valuenow={constructionProgress?.fomorianProgress}
+						role="progressbar"
+					>
+						{constructionProgress?.fomorianProgress}%
+					</div>
 				</div>
-			</div>
-			<div>
-				<p>Razorback</p>
-				<div
-					class="radial-progress text-primary"
-					style="--value:{constructionProgress?.razorbackProgress};"
-					aria-valuenow={constructionProgress?.razorbackProgress}
-					role="progressbar"
-				>
-					{constructionProgress?.razorbackProgress}%
+				<div>
+					<p>Razorback</p>
+					<div
+						class="radial-progress text-primary"
+						style="--value:{constructionProgress?.razorbackProgress};"
+						aria-valuenow={constructionProgress?.razorbackProgress}
+						role="progressbar"
+					>
+						{constructionProgress?.razorbackProgress}%
+					</div>
 				</div>
 			</div>
 		</div>

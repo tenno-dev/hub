@@ -3,9 +3,11 @@
 	import Archon from '$lib/components/Archon.svelte';
 	import Construction from '$lib/components/Construction.svelte';
 	import HeroSlider from '$lib/components/HeroSlider.svelte';
+	import Fissures from '$lib/components/Fissures.svelte';
 	let heroItems = $derived(data?.news && data?.news.length > 0 ? data.news.slice(0, 5) : []);
 	let constructionProgress = data.constructionProgress || 0;
 	let archonHunt = data.archonHunt || 0;
+	let fissures = data.fissures || 0;
 </script>
 
 <div>
@@ -15,6 +17,9 @@
 	<div class="masonry grid grid-cols-3 gap-2">
 		<div class="px-4"><Construction {constructionProgress} /></div>
 		<div class="px-4"><Archon {archonHunt} /></div>
+		<div class="px-4">
+			<Fissures {fissures} />
+		</div>
 	</div>
 
 	<p></p>
