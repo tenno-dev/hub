@@ -2,7 +2,7 @@
 	const currentYear = $state(new Date().getFullYear());
 </script>
 
-<footer class="footer bg-base-300 text-base-content p-4">
+<footer class="footer bg-base-300 text-base-content p-4 bottom-0">
 	<div class="footer-content">
 		<div class="footer-left">
 			<p>Copyright © {currentYear} - All rights reserved</p>
